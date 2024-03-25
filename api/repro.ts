@@ -1,5 +1,3 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node'
-
-export default function (request: VercelRequest, response: VercelResponse) {
-  response.send('ok')
+export function GET (request) {
+  return new Response('ok 4')
 }
